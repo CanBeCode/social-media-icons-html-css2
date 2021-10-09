@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        *,
+         ::after,
+         ::before {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background: #1d1d42;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        .btn {
+            text-decoration: none;
+            background: #fff;
+            padding: 27px 44px;
+            font-size: 20px;
+            text-transform: uppercase;
+            border: 1px solid #3a43ef;
+            color: #3a43ef;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0px 0px 0px #41414154;
+            transform: scale(1);
+            position: relative;
+        }
+        
+        .btn:after,
+        .btn::before {
+            content: "";
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            border: 1px solid #969ae2;
+        }
+        
+        .btn:hover:after {
+            top: -10px;
+            right: -10px;
+            left: -10px;
+            bottom: -10px;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .btn:hover:before {
+            top: -20px;
+            right: -20px;
+            left: -20px;
+            bottom: -20px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn:hover {
+            background: #3a43ef;
+            color: #fff;
+            box-shadow: 0px -8px 45px #006effba;
+            transform: scale(1.02);
+        }
+    </style>
+    <a href="#" class="btn">Button Style</a>
+</body>
+
+</html>
